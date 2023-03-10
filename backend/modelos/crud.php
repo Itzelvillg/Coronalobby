@@ -1,22 +1,18 @@
 <?php
+interface CRUD {
+    public function create();
+    public function update();
+    public function delete();
 
-    interface CRUD {
-        //Funcion para crear registros
-        public function create();
+    //Devuelve un solo registro
+    public function read_by_id();
+    //Devuelve todos los registros
+    public function read_all();
+    //Devuelve varios registros por columna
+    public function read_by_column();
+}
 
-        //Funcion para actualizar registros
-        public function update();
 
-        //FUncion para borrar registros 
-        public function delete();
+    
 
-        //Funcion para leer un registro por id
-        public function read_by_id();
-
-        //Funcion para leer un registro por columnas
-        public function read_by_column();
-
-        //Funcion para leer todos los registros 
-        public function read_all();
-    };
 ?>

@@ -123,7 +123,7 @@ class usuarios implements CRUD{
         $conn = $conexion->get_conn();
 
         $stmt = $conn->prepare(" SELECT * FROM usuarios WHERE email=:email AND pass=:pass 
-        AND estatus='activo' ");
+        AND estatus='activo' AND tipo='admin'");
         $stmt->bindParam(':email', $this->email); 
         $stmt->bindParam(':pass', $this->pass); 
         $stmt->setFetchMode(PDO::FETCH_OBJ);
@@ -136,23 +136,5 @@ class usuarios implements CRUD{
 
        
     } 
-    public function accesoadmin(){ 
-      
-            $conexion = new ConfigDB();
-            $conexion->conectar();
-            $conn = $conexion->get_conn();
-    
-            $stmt = $conn->prepare(" SELECT * FROM usuarios WHERE email=:email AND pass=:pass 
-            AND estatus='activo' AND tipo='admin'");
-            $stmt->bindParam(':email', $this->email); 
-            $stmt->bindParam(':pass', $this->pass); 
-            $stmt->setFetchMode(PDO::FETCH_OBJ);
-    
-            $stmt->execute();
-    
-            $conexion->desconectar();
-    
-            return $stmt->fetchAll();
-    
-        }
+  
 }

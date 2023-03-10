@@ -1,9 +1,9 @@
 <?php
 
 class ConfigDb{
-    private $servername = "coronalobby.mx.grupogana.mx";
-    private $username = "coronalobby";
-    private $password = "lobby2022";
+    private $servername = "localhost";
+    private $username = "root";
+    private $password = "";
     private $conn = null;
     
     public function conectar(){
@@ -28,6 +28,4 @@ class ConfigDb{
 
 }
 
-
 ?>
-
