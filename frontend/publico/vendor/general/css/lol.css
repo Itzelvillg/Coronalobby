@@ -1,0 +1,272 @@
+/* Menu Styling*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+.container .carta:hover{
+
+    transform: translateY(-15PX);
+    box-shadow: 0 12px 16px black;
+}
+/*Menu*/
+
+nav.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cab_nav {
+    width: 100%;
+    height: 15%;
+    padding: 30px;
+    text-align: right;
+    position: fixed;
+    background-color: black;
+}
+
+.cab_nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 50px;
+    height: 2%;
+    color: white;
+    font-size: 20px;
+    font-family: "Montserrat";
+    font-style: bold;
+    cursor: pointer;
+}
+
+.cab_nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.nomb_love {
+    height: 2%;
+    padding: 10px 60px;
+    float: left;
+    position: relative;
+    top: 5%;
+    right: 1%;
+    color: #fff;
+    font-size: 25px;
+    font-family: "Montserrat";
+}
+
+.logo {
+    width: 50px;
+    float: left;
+
+}
+
+.marca {
+    background-color: gray;
+}
+
+/* Body styling*/
+
+.BannerServ {
+    background-color: #F4F4F4;
+}
+
+.video {
+    position: center;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: -20px;
+
+}
+
+.DescripcionServ {
+    background-color: #F4F4F4;
+    padding-top: -20px;
+}
+
+.titulos {
+    font-size: 45px;
+    text-align: center;
+    padding: 60px 60px;
+    font-family: "Montserrat";
+    color: #1E0A2D;
+}
+
+.parrafos {
+    font-size: 40px;
+    height: 100%;
+    padding: 50px 80px;
+    ;
+    text-align: justify;
+    font-family: "Montserrat";
+    color: #1E0A2D;
+}
+
+/* Style / pagina1*/
+
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover {
+    background-color: rgb(101, 33, 165);
+}
+
+
+.color-acento {
+    color: blueviolet;
+}
+
+.color-acento1 {
+    text-shadow: 1px 1px 2px black, 0 0 1em blueviolet, 0 0 0.2em #CD9ED1;
+    color: white;
+}
+
+#nuestros-proyectos {
+    text-align: center;
+}
+
+#nuestros-proyectos .container {
+    padding: 150px 12px;
+}
+
+#nuestros-proyectos h2 {
+    
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-proyectos p {
+    display: none;
+    color: #fff;
+    font-size: 27px;
+}
+
+#nuestros-proyectos .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("imagenes/smart.jpg");
+
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("imagenes/creativo.jpg");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("imagenes/beat.jpg");
+
+}
+
+@media (min-width: 850px) {
+
+
+    #nuestros-proyectos .proyectos {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #nuestros-proyectos p {
+        display: block;
+        margin-bottom: 30px;
+        margin-top: 100px;
+        text-shadow: black;
+    }
+
+    #nuestros-proyectos h2 {
+        font-size: 4em;
+
+    }
+
+    #nuestros-proyectos h3 {
+        margin-top: 0px;
+        color: white;
+    }
+
+    #nuestros-proyectos .carta {
+        padding: 60px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .carta:first-child {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("imagenes/smart.jpg");
+
+    }
+
+    .carta:nth-child(2) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("imagenes/creativo.jpg");
+            }
+
+    .carta:nth-child(3) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("imagenes/beat.jpg");}}
